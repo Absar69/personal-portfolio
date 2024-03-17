@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absar - Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(10, 10, 49);
+            color: white;
+            font-family: 'popins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 78px;
+            background-color: rgb(24, 24, 77);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+
+            list-style: none;
+            margin: 0 24px;
+        }
+
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        nav ul li a:hover {
+            color: rgb(213, 150, 238);
+            font-size: 1.1rem;
+
+        }
+
+        .left {
+            font-size: 1.4rem;
+        }
+
+        .pehla {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 140px 0;
+
+        }
+
+        .pehla>div {
+            width: 30%;
+
+        }
+
+        .LS {
+
+            font-size: 3rem;
+
+        }
+
+        .RS img {
+            width: 100%;
+        }
+
+        .purple {
+            color: rgb(155, 89, 182);
+        }
+
+        #element {
+            color: rgb(155, 89, 182);
+        }
+
+        .dosra {
+            max-width: 80vw;
+            margin: auto;
+            height: 50vh;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(148, 148, 181);
+            height: 1.3px;
+            margin: 40px 84px;
+        }
+
+        .dosra h1 {
+            font-size: 2.1rem;
+        }
+
+        .text1 {
+            color: rgb(92, 92, 99);
+        }
+
+        .box {
+            background: white;
+            width: 150vh;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .dosra .ver {
+            height: 93px;
+            width: 2px;
+            background-color: white;
+            margin: 0 120px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -8px;
+        }
+
+        .ver-text {
+            position: relative;
+            top: 75px;
+            width: 150px;
+
+
+        }
+
+        .ver-desc {
+            position: relative;
+            top: 86px;
+            color: rgb(92, 92, 99);
+            width: 150px;
+            font-size: 9px;
+        }
+
+        footer {
+            background-color: rgb(24, 24, 77);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            height: 40px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .footer-links li {
+            margin: 0 10px;
+        }
+
+        .footer-links li a {
+            color: white;
+            text-decoration: none;
+        }
+
+
+        .about {
+            max-width: 80vw;
+            margin: auto;
+            padding: 50px 20px;
+            color: white;
+        }
+
+        .about h1 {
+            font-size: 2.1rem;
+        }
+
+        .about-content {
+            color: rgb(92, 92, 99);
+        }
+
+        .about p {
+            margin-bottom: 20px;
+        }
+
+        .about .box {
+            background: white;
+            width: 150vh;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .about .ver {
+            height: 93px;
+            width: 2px;
+            background-color: white;
+            margin: 0 120px;
+        }
+
+        .about .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -8px;
+        }
+
+        .about .ver-text {
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+
+        .about .ver-desc {
+            position: relative;
+            top: 86px;
+            color: rgb(92, 92, 99);
+            width: 150px;
+            font-size: 9px;
+        }
+
+        .projects {
+            max-width: 80vw;
+            margin: auto;
+            padding: 50px 20px;
+            color: white;
+            height: 50vh;
+        }
+
+        .projects h1 {
+            font-size: 2.1rem;
+        }
+
+        .projects .text1 {
+            color: rgb(92, 92, 99);
+        }
+
+        .projects .box {
+            background: white;
+            width: 150vh;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .projects .ver {
+            height: 93px;
+            width: 2px;
+            background-color: white;
+            margin: 0 120px;
+        }
+
+        .projects .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -8px;
+        }
+
+        .projects .ver-text {
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+
+        .projects .ver-desc {
+            position: relative;
+            top: 86px;
+            color: rgb(92, 92, 99);
+            width: 150px;
+            font-size: 9px;
+        }
+
+
+        .contact {
+            max-width: 80vw;
+            margin: auto;
+            padding: 50px 20px;
+            color: white;
+        }
+
+        .contact h1 {
+            font-size: 2.1rem;
+        }
+
+        .contact .text1 {
+            color: rgb(92, 92, 99);
+        }
+
+        .contact .contact-info {
+            margin-top: 40px;
+        }
+
+        .contact .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .contact .info-icon {
+            width: 30px;
+            margin-right: 15px;
+        }
+
+        .contact .info-text {
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Absar's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a id="home-link" href="#pehla">Home</a></li>
+                    <li><a id="about-link" href="#about">About</a></li>
+                    <li><a id="projects-link" href="#projects">Projects</a></li>
+                    <li><a id="contact-link" href="#contact">Contact</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="pehla" class="pehla">
+            <div class="LS">
+                Hi, My name is <span class="purple">Absar</span>
+                <div>
+                    and I am Proficient
+                </div>
+
+                <span id="element"></span>
+            </div>
+            <div class="RS"><img src="dle.png" alt=""></div>
+
+        </section>
+        <hr>
+
+        <section class="dosra">
+            <span class="text1">What I've accomplished up to this point.</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="ver">
+                    <img class="image-top" src="aiesec.png" alt="">
+                    <div class="ver-text">
+                        TL AIESEC (2023-PRESENT)
+                    </div>
+                    <div class="ver-desc">
+
+                        I've led a team in AIESEC, focusing on managing outgoing exchanges. This involved coordinating
+                        logistics, facilitating communication, and ensuring the success of exchange programs. My role
+                        also included supporting team members and promoting cross-cultural understanding through
+                        international exchanges.
+                    </div>
+                </div>
+                <div class="ver">
+                    <img class="image-top" src="nu.png" alt="">
+                    <div class="ver-text">
+                        Daira Marketing (2023)
+                    </div>
+                    <div class="ver-desc">
+                        At Daira Marketing, I was responsible for creating content and managing social media platforms.
+                        This included developing engaging content aligned with the brand's identity and overseeing its
+                        distribution across various channels. My role also involved curating social media strategies to
+                        enhance brand presence and engagement with the audience.
+                    </div>
+                </div>
+                <div class="ver">
+                    <img class="image-top" src="pr.png" alt="">
+                    <div class="ver-text">
+                        Video Editor (2018-PRESENT)
+                    </div>
+                    <div class="ver-desc">
+                        I've provided video editing services for clients, creating professional-quality videos to meet
+                        their needs and preferences. This involved collaborating closely with clients to understand
+                        their vision, incorporating feedback throughout the editing process, and delivering high-quality
+                        final products.
+                    </div>
+                </div>
+                <div class="ver">
+                    <img class="image-top" src="dubai.png" alt="">
+                    <div class="ver-text">
+                        Volunteer Work
+                    </div>
+                    <div class="ver-desc">
+
+                        I volunteered at Dubai Sports City as a ticket stand attendant for a cricket match. In this
+                        role, I assisted with ticket sales and customer service, ensuring smooth and efficient
+                        operations during the event. My responsibilities included greeting attendees, processing ticket
+                        purchases, and addressing any inquiries or issues they may have had. Through this experience, I
+                        gained valuable customer service skills and contributed to the overall success of the cricket
+                        match event.
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <hr>
+        <section id="about" class="about">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>
+
+                    My name is Absar Raashid, and I'm currently studying computer science at FAST National University,
+                    having completed my schooling in the United Arab Emirates. Alongside my academic pursuits, I've been
+                    deeply involved in sports and creative endeavors. For six years, I played football at the district
+                    level in the UAE, which not only kept me physically active but also taught me valuable lessons in
+                    teamwork and resilience.
+                </p>
+                <p>
+                    Outside of sports, I find immense joy in artistic expression. Sketching and painting allow me to
+                    unleash my creativity and bring my imagination to life on canvas. Writing is another passion of
+                    mine; I enjoy jotting down my thoughts, crafting stories, and exploring new ideas through words.
+                </p>
+                <p>
+                    In addition to sports and art, I'm an avid gamer. Gaming provides me with a platform to unwind, have
+                    fun, and exercise my strategic thinking skills. Whether I'm competing against friends or embarking
+                    on solo adventures, gaming offers me an immersive and enjoyable experience that complements my other
+                    interests perfectly.
+                </p>
+            </div>
+        </section>
+        <hr>
+
+        <section id="projects" class="projects">
+            <span class="text1">Check out some of my projects.</span>
+            <h1>My Projects</h1>
+
+            <div class="box">
+                <div class="ver">
+                    <img class="image-top" src="candy.png" alt="">
+                    <div class="ver-text">
+                        Candy Crush
+                    </div>
+                    <div class="ver-desc">
+                        Using C++ and SFML, I successfully developed a Candy Crush-style game, showcasing my programming
+                        skills and creativity in game development. Throughout the project, I implemented match-three
+                        puzzle mechanics, managed game states, handled user input, and optimized performance for smooth
+                        gameplay. Through iterative refinement and playtesting, I enhanced the game's features and
+                        usability, gaining valuable experience in software engineering principles and practices while
+                        demonstrating proficiency in C++ programming and game development.
+                    </div>
+                </div>
+                <div class="ver">
+                    <img class="image-top" src="phone.png" alt="">
+                    <div class="ver-text">
+                        Phone Book
+                    </div>
+                    <div class="ver-desc">
+                        I created a phonebook application with C++ for the backend and C# for the frontend, emphasizing
+                        object-oriented programming principles. The backend handled contact management functionalities
+                        like adding, deleting, and searching contacts, while the frontend provided a user-friendly
+                        interface for seamless interaction. This project demonstrated my ability to merge backend and
+                        frontend technologies effectively, showcasing proficiency in both C++ and C# development.
+                    </div>
+                </div>
+                <div class="ver">
+                    <img class="image-top" src="dic.png" alt="">
+                    <div class="ver-text">
+                        Dictionary with Suggested Search
+                    </div>
+                    <div class="ver-desc">
+                        As part of my Data Structures course, I utilized trie trees in C++ to create a dictionary.
+                        Furthermore, I implemented compression and decompression algorithms to optimize data storage and
+                        retrieval. This project underscored my proficiency in both C++ programming and advanced data
+                        structures, demonstrating my ability to apply theoretical concepts to practical implementations
+                        effectively.
+                    </div>
+                </div>
+                <div class="ver">
+                    <img class="image-top" src="student.png" alt="">
+                    <div class="ver-text">
+                        Student Management System
+                    </div>
+                    <div class="ver-desc">
+
+                        I developed a Student Management System using SQL and PL-SQL for the backend and React for the
+                        frontend. It showcased my skills in database management and web development. The SQL-based
+                        database efficiently handled student information, while React ensured a user-friendly interface.
+                        This project highlighted my ability to integrate technologies for practical solutions.
+
+                    </div>
+
+
+                </div>
+                <div class="ver">
+                    <img class="image-top" src="os.png" alt="">
+                    <div class="ver-text">
+                        OS Simulator
+                    </div>
+                    <div class="ver-desc">
+
+                        I created an OS simulator that emulated the core functionalities of a full-fledged operating
+                        system. This simulator incorporated features such as games, a calculator, custom terminal
+                        commands, and a file editor. Using advanced concepts like piping, mutexes, and semaphores, I
+                        ensured smooth communication and synchronization between different processes within the
+                        simulated environment. This project demonstrated my ability to apply intricate system-level
+                        programming concepts to develop a comprehensive software system.
+                    </div>
+
+                </div>
+        </section>
+
+
+
+    </main>
+
+
+    <hr>
+
+    <section id="contact" class="contact">
+        <span class="text1">Get in touch with me.</span>
+        <h1>Contact</h1>
+
+        <div class="contact-info">
+            <div class="info-item">
+                <img class="info-icon" src="phone1.png" alt="Phone">
+                <p class="info-text">Phone: +92 3326628833</p>
+            </div>
+            <div class="info-item">
+                <img class="info-icon" src="gmail.png" alt="Email">
+                <p class="info-text">Email: absarrashid3@gmail.com</p>
+            </div>
+            <div class="info-item">
+                <img class="info-icon" src="loc.png" alt="Location">
+                <p class="info-text">Location: Pakistan </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Absar's Portfolio. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        // Typed.js initialization
+        var typed = new Typed('#element', {
+            strings: ['Computer Scientist', 'Video Editor', 'Digital Marketer', 'TL in AIESEC'],
+            typeSpeed: 50,
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                var targetSectionId = this.getAttribute('href');
+                document.querySelector(targetSectionId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add an event listener to each navigation link to scroll to the respective section
+        document.getElementById('home-link').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector('#pehla').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+
+        document.getElementById('about-link').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector('#about').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+
+        document.getElementById('projects-link').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector('#projects').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+
+        document.getElementById('contact-link').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector('#contact').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
